@@ -1,0 +1,84 @@
+body  {
+    font-family:Arial;
+}
+
+h2{
+    margin: 20px 0 25px 50px;
+}
+
+.item {
+    display:flex;
+}
+.item .image {
+    width:250px;
+}
+
+.item .image img   {
+    display:inline-block;
+    vertical-align:top;
+    height:75px;
+    margin-left:50px;
+    margin-right:20px;
+    margin-bottom:10px; }
+
+.desc {
+    display:inline-block;
+    width:60%;
+    max-width: 800px;
+    height:100%;
+    font-family:Arial;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.modal.active{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal .innermodal {
+    background-color: #ffffff;
+    border-radius:25px;
+    margin: 25vh auto;
+    padding: 60px 50px;
+    width: 50vw;
+    min-height: 12vh;
+}
+
+.modal .innermodal .close {
+    float:right;
+    margin: -40px -33px 0 0;
+}
+
+.modal .innermodal .close:hover {
+    cursor: pointer;
+}
+
+.modal .innermodal .close img {
+    width:40px;
+    height:auto;
+}
+
+.modal .innermodal .image {
+    float:right;
+    width: 180px;
+}
+
+.modal .innermodal .image img {
+    width: 100%;
+    margin:10px;
+    height:auto;
+}
+
+.modal .innermodal .name {
+    font-size: 20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.modal .innermodal .description {
+    font-size: 16px;
+}
