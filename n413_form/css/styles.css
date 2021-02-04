@@ -1,0 +1,42 @@
+body	{
+    font-family:Arial;
+}
+#content {
+    width:50%;
+ margin:0 auto;
+}
+h2	{
+    text-align:center;
+    margin-top:50px;
+}
+#container {
+    width:fit-content;
+    margin:40px auto;
+}
+input {
+    font-size:18px;
+    margin-bottom:20px;
+    padding:5px;
+}
+textarea {
+    height:100px;
+    width:300px;
+    margin-bottom:30px;
+    font-size:16px;
+    margin-top:15px;
+    padding:5px;
+}
+
+textarea::placeholder {
+    font-family:Arial;
+}
+
+label {
+    margin-right:20px;
+    margin-bottom:20px;
+
+}
+
+.question {
+    padding:20px;
+}
