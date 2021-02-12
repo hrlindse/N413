@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="162c3014-760e-451a-9a62-3ea6e82f915b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_form/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_form/form_responses.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_form/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/form_responses.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/bagel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/baguette.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/biscuit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/cornbread.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/melonpan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/muffin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/naan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/pita.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/pumpernickel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/images/rye.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/list.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_site/n413connect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +25,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/n413_litlist/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -29,19 +39,23 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/n413_form" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/n413_site" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\N413\n413_site" />
+      <recent name="C:\xampp\htdocs\N413\n413_site\images" />
+      <recent name="C:\xampp\htdocs\N413\n413_site\css" />
+      <recent name="C:\xampp\htdocs\N413\n413_form" />
+      <recent name="C:\xampp\htdocs\N413\the-list\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\N413" />
       <recent name="C:\xampp\htdocs\N413\project-template" />
       <recent name="C:\xampp\htdocs\N413\the-list" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\N413\n413_form" />
-      <recent name="C:\xampp\htdocs\N413\the-list\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -67,7 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611878279833</updated>
       <workItem from="1611878280980" duration="6209000" />
-      <workItem from="1612467125063" duration="4691000" />
+      <workItem from="1612467125063" duration="4731000" />
+      <workItem from="1613068589191" duration="6771000" />
     </task>
     <servers />
   </component>
@@ -79,7 +94,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
