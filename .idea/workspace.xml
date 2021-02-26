@@ -2,28 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="162c3014-760e-451a-9a62-3ea6e82f915b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/form_responses.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/bagel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/baguette.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/biscuit.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/cornbread.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/melonpan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/muffin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/naan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/pita.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/pumpernickel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/images/rye.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/list.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/n413connect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_account/n413post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/form_responses.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/bagel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/baguette.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/biscuit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/cornbread.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/melonpan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/muffin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/naan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/pita.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/pumpernickel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/images/rye.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/list.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_pw/users_hash.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/n413_account/n413connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/n413_account/n413connect.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,23 +40,23 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/n413_account" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/n413_pw/css" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\N413\n413_pw\css" />
+      <recent name="C:\xampp\htdocs\N413\n413_pw" />
+      <recent name="C:\xampp\htdocs\N413\n413_pw\images" />
+      <recent name="C:\xampp\htdocs\N413\n413_account" />
+      <recent name="C:\xampp\htdocs\N413\n413_account\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\N413" />
       <recent name="C:\xampp\htdocs\N413\project-template" />
       <recent name="C:\xampp\htdocs\N413\the-list" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\N413\n413_account" />
-      <recent name="C:\xampp\htdocs\N413\n413_account\css" />
-      <recent name="C:\xampp\htdocs\N413" />
-      <recent name="C:\xampp\htdocs\N413\n413_account\images" />
-      <recent name="C:\xampp\htdocs\N413\n413_site" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -89,7 +84,8 @@
       <workItem from="1611878280980" duration="6209000" />
       <workItem from="1612467125063" duration="4731000" />
       <workItem from="1613068589191" duration="6936000" />
-      <workItem from="1613690275864" duration="3673000" />
+      <workItem from="1613690275864" duration="4348000" />
+      <workItem from="1614285775705" duration="5319000" />
     </task>
     <servers />
   </component>
