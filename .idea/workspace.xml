@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="162c3014-760e-451a-9a62-3ea6e82f915b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/n413_reset/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/form_responses.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/bagel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/baguette.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/biscuit.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/cornbread.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/melonpan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/muffin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/naan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/pita.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/pumpernickel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/images/rye.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/list.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/messages_open.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/n413auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/n413connect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/n413post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/n413register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/open_head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_reset/users_hash.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_wp/wp-content/themes/twentytwenty-child/functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/n413_wp/wp-content/themes/twentytwenty-child/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_wp/wp-content/themes/twentysixteen-child/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/n413_wp/wp-content/themes/twentysixteen-child/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,23 +26,24 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/n413_reset" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/n413_wp/wp-content/themes/twentysixteen-child" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\N413\n413_wp\wp-content\themes" />
       <recent name="C:\xampp\htdocs\N413" />
       <recent name="C:\xampp\htdocs\N413\project-template" />
       <recent name="C:\xampp\htdocs\N413\the-list" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\N413\n413_wp\wp-content\themes\twentysixteen-child" />
       <recent name="C:\xampp\htdocs\N413\n413_reset" />
       <recent name="C:\xampp\htdocs\N413\n413_reset\css" />
       <recent name="C:\xampp\htdocs\N413\n413_reset\images" />
       <recent name="C:\xampp\htdocs\N413\n413_pw\css" />
-      <recent name="C:\xampp\htdocs\N413\n413_pw" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -102,7 +74,7 @@
       <workItem from="1613690275864" duration="4348000" />
       <workItem from="1614285775705" duration="5319000" />
       <workItem from="1614877671143" duration="2499000" />
-      <workItem from="1615495346166" duration="4533000" />
+      <workItem from="1615495346166" duration="5719000" />
     </task>
     <servers />
   </component>
