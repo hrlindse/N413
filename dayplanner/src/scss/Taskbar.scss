@@ -1,0 +1,225 @@
+.taskbar {
+  /*padding-top:30px;*/
+  width:30%;
+  max-width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  // list styles
+  .tasklist-container {
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    .tasklist-top {
+      flex-grow: 1;
+      h2 {
+        margin-top:0;
+        padding-top:20px;
+      }
+      .tasklist{
+        text-align:left;
+        padding: 0 20px;
+        .task-container {
+          display:flex;
+          text-decoration: none;
+          color:black;
+          align-items: center;
+          .checkbox {
+            align-self: center;
+            height:25px;
+            width:25px;
+            margin: 6px;
+          }
+          .taskname {
+            font-size: 18px;
+          }
+        }
+
+      }
+    }
+    .tasklist-bottom {
+      display:flex;
+      justify-content: center;
+      margin-bottom:35px;
+      a.add-button {
+        text-decoration: none;
+        div.add-button {
+          width: fit-content;
+          padding:13px;
+          background-color: #CEE2A3;
+          color:black;
+          font-weight:bold;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  // details styles
+  .task-details-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .back-bar {
+      color: $white;
+      background-color: $dark-teal;
+      padding: 10px 5px;
+      a {
+        color: $white;
+        text-decoration: none;
+        display:flex;
+        font-size:30px;
+        align-items: center;
+        .back-arrow {
+          color: $white;
+          font-size:40px;
+          padding-top:3px;
+        }
+      }
+    }
+    .task-details {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .details-top {
+        align-self: stretch;
+        .actions {
+          display:flex;
+          justify-content: space-evenly;
+          align-items: baseline;
+          background-color: $lt-teal;
+          height: fit-content;
+          padding: 8px 10px 12px;
+          //font-weight: bold;
+          a {
+            text-decoration: none;
+          }
+          .action {
+            color: $black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 5px;
+            .icon {
+              font-size: 50px;
+              &.edit {
+                font-size: 45px;
+                padding-bottom:4px;
+              }
+              &.complete {
+                //font-size: 58px;
+                cursor: pointer;
+              }
+              &.incomplete {
+                //font-size: 58px;
+                cursor: pointer;
+              }
+              &.push {
+                font-size: 48px;
+                cursor: pointer;
+              }
+            }
+          }
+
+          @media only screen and (max-width: 1000px) {
+            a {
+              .action {
+                .icon {
+                  font-size: 40px;
+                  &.edit {
+                    font-size: 35px;
+                    padding-bottom: 4px;
+                  }
+                  &.complete {
+                    //font-size: 58px;
+                  }
+                  &.incomplete {
+                    //font-size: 58px;
+                  }
+                  &.push {
+                    font-size: 38px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+        .details-top-text {
+          text-align: left;
+          padding: 18px 22px;
+          .task-title {
+            font-size:24px;
+            margin-bottom:10px;
+          }
+          .task-desc {
+            font-size:18px;
+          }
+        }
+      }
+      .details-bottom {
+        font-size:20px;
+        .main-bottom-details{
+          text-align: left;
+          padding: 18px 22px;
+          background-color: $lt-teal;
+        }
+        .priority {
+          text-align: left;
+          padding: 10px 22px;
+          color: $white;
+          background-color: $red;
+        }
+
+      }
+    }
+
+  }
+  // form styles
+  .edit-task-container {
+    width:100%;
+    background-color: $lt-grey;
+    .edit-bar {
+      color: $white;
+      background-color: $dark-teal;
+      padding: 10px 25px 10px 15px;
+      display:flex;
+      justify-content: space-between;
+      a, div {
+        color: $white;
+        text-decoration: none;
+        display:flex;
+        font-size:28px;
+        align-items: center;
+        .icon {
+          color: $white;
+          font-size:40px;
+          padding:3px 5px 0 0;
+        }
+        &#submit-form {
+          cursor:pointer;
+        }
+      }
+    }
+    .task-edit-form {
+      text-align: left;
+      padding: 0 22px;
+      form {
+        display: flex;
+        flex-direction: column;
+        label {
+          display: inline-block;
+          font-size: 22px;
+          padding-bottom: 5px;
+        }
+        input, select, textarea {
+          font-family: Arial;
+          margin-bottom: 25px;
+          padding:5px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

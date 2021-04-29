@@ -1,0 +1,652 @@
+.calendar {
+  /*padding-top:10px;*/
+  width: 100%;
+  height: 100%;
+  background-color: #EDEDED;
+  /* Week styles */
+  /* CSS Grid positions */
+}
+.calendar .week {
+  display: grid;
+  height: 99%;
+  width: 100%;
+  justify-content: stretch;
+  background-color: #EDEDED;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.calendar .week .day-header {
+  grid-row: 1;
+  border-bottom: #353535 1px solid;
+}
+.calendar .week .time-slot {
+  background-color: #ADE3D3;
+  height: 100%;
+  border: #353535 0.5px solid;
+}
+.calendar .week .time-slot:hover {
+  cursor: pointer;
+}
+.calendar .monday {
+  grid-area: monday;
+  grid-column: 1;
+}
+.calendar .tuesday {
+  grid-area: tuesday;
+  grid-column: 2;
+}
+.calendar .wednesday {
+  grid-area: wednesday;
+  grid-column: 3;
+}
+.calendar .thursday {
+  grid-area: thursday;
+  grid-column: 4;
+}
+.calendar .friday {
+  grid-area: friday;
+  grid-column: 5;
+}
+.calendar .saturday {
+  grid-area: saturday;
+  grid-column: 6;
+}
+.calendar .sunday {
+  grid-area: sunday;
+  grid-column: 7;
+}
+.calendar .item-800 {
+  grid-row: 2;
+}
+.calendar .item-900 {
+  grid-row: 3;
+}
+.calendar .item-1000 {
+  grid-row: 4;
+}
+.calendar .item-1100 {
+  grid-row: 5;
+}
+.calendar .item-1200 {
+  grid-row: 6;
+}
+.calendar .item-1300 {
+  grid-row: 7;
+}
+.calendar .item-1400 {
+  grid-row: 8;
+}
+.calendar .item-1500 {
+  grid-row: 9;
+}
+.calendar .item-1600 {
+  grid-row: 10;
+}
+.calendar .item-1700 {
+  grid-row: 11;
+}
+.calendar .item-1800 {
+  grid-row: 12;
+}
+.calendar .item-1900 {
+  grid-row: 13;
+}
+.calendar .item-2000 {
+  grid-row: 14;
+}
+.calendar .item-800-start {
+  grid-row-start: 2;
+}
+.calendar .item-900-start {
+  grid-row-start: 3;
+}
+.calendar .item-1000-start {
+  grid-row-start: 4;
+}
+.calendar .item-1100-start {
+  grid-row-start: 5;
+}
+.calendar .item-1200-start {
+  grid-row-start: 6;
+}
+.calendar .item-1300-start {
+  grid-row-start: 7;
+}
+.calendar .item-1400-start {
+  grid-row-start: 8;
+}
+.calendar .item-1500-start {
+  grid-row-start: 9;
+}
+.calendar .item-1600-start {
+  grid-row-start: 10;
+}
+.calendar .item-1700-start {
+  grid-row-start: 11;
+}
+.calendar .item-1800-start {
+  grid-row-start: 12;
+}
+.calendar .item-1900-start {
+  grid-row-start: 13;
+}
+.calendar .item-2000-start {
+  grid-row-start: 14;
+}
+.calendar .item-800-end {
+  grid-row-end: 2;
+}
+.calendar .item-900-end {
+  grid-row-end: 3;
+}
+.calendar .item-1000-end {
+  grid-row-end: 4;
+}
+.calendar .item-1100-end {
+  grid-row-end: 5;
+}
+.calendar .item-1200-end {
+  grid-row-end: 6;
+}
+.calendar .item-1300-end {
+  grid-row-end: 7;
+}
+.calendar .item-1400-end {
+  grid-row-end: 8;
+}
+.calendar .item-1500-end {
+  grid-row-end: 9;
+}
+.calendar .item-1600-end {
+  grid-row-end: 10;
+}
+.calendar .item-1700-end {
+  grid-row-end: 11;
+}
+.calendar .item-1800-end {
+  grid-row-end: 12;
+}
+.calendar .item-1900-end {
+  grid-row-end: 13;
+}
+.calendar .item-2000-end {
+  grid-row-end: 14;
+}
+
+.ReactModal__Overlay--after-open {
+  width: 80%;
+  height: 90vh;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+  top: 10vh !important;
+}
+
+.ReactModal__Content--after-open {
+  width: 60%;
+  margin: 10% auto 0;
+  padding: 0 !important;
+  border-radius: 30px !important;
+  display: flex;
+  overflow-y: hidden !important;
+  position: absolute;
+  inset: 40px;
+  border: 1px solid #cccccc;
+  background: white;
+  outline: none;
+  height: 55% !important;
+}
+.ReactModal__Content--after-open .event-details-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ReactModal__Content--after-open .event-details-container .event-details {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .top-bar {
+  color: #FFFFFF;
+  background-color: #24605A;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .top-bar a.edit {
+  text-decoration: none;
+  width: fit-content;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .top-bar a.edit .action {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .top-bar a.edit .action .icon {
+  font-size: 30px;
+  padding-right: 8px;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .top-bar .details-top .event-title {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .top-bar .details-top .event-time-date .event-date {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .top-bar .details-top .event-time-date .event-time-range {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .details-bottom {
+  padding: 25px 30px;
+  font-size: 18px;
+  overflow-y: scroll;
+  height: 100%;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .details-bottom::-webkit-scrollbar {
+  width: 8px;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .details-bottom::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .details-bottom::-webkit-scrollbar-thumb {
+  background: #BBBBBB;
+  border-radius: 10px;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .details-bottom .description {
+  padding-bottom: 30px;
+}
+.ReactModal__Content--after-open .event-details-container .event-details .details-bottom hr {
+  margin-bottom: 18px;
+}
+.ReactModal__Content--after-open .edit-event-container {
+  width: 100%;
+}
+.ReactModal__Content--after-open .edit-event-container .edit-bar {
+  color: #FFFFFF;
+  background-color: #24605A;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  font-size: 20px;
+}
+.ReactModal__Content--after-open .edit-event-container .edit-bar a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.ReactModal__Content--after-open .edit-event-container .edit-bar a .icon {
+  padding-top: 1px;
+  font-size: 40px !important;
+}
+.ReactModal__Content--after-open .edit-event-container .edit-bar .action {
+  display: flex;
+  align-items: center;
+}
+.ReactModal__Content--after-open .edit-event-container .edit-bar .action #submit-form {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.ReactModal__Content--after-open .edit-event-container .edit-bar .action #submit-form .icon {
+  font-size: 27px;
+  padding-right: 6px;
+}
+.ReactModal__Content--after-open .edit-event-container .event-edit-form {
+  max-height: 100%;
+  overflow-y: scroll;
+}
+.ReactModal__Content--after-open .edit-event-container .event-edit-form::-webkit-scrollbar {
+  width: 8px;
+}
+.ReactModal__Content--after-open .edit-event-container .event-edit-form::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ReactModal__Content--after-open .edit-event-container .event-edit-form::-webkit-scrollbar-thumb {
+  background: #BBBBBB;
+  border-radius: 10px;
+}
+.ReactModal__Content--after-open .edit-event-container .event-edit-form form {
+  margin-bottom: 60px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.ReactModal__Content--after-open .edit-event-container .event-edit-form form label {
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+.ReactModal__Content--after-open .edit-event-container .event-edit-form form input, .ReactModal__Content--after-open .edit-event-container .event-edit-form form select, .ReactModal__Content--after-open .edit-event-container .event-edit-form form textarea {
+  font-family: Arial;
+  margin-bottom: 10px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+.taskbar {
+  /*padding-top:30px;*/
+  width: 30%;
+  max-width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.taskbar .tasklist-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.taskbar .tasklist-container .tasklist-top {
+  flex-grow: 1;
+}
+.taskbar .tasklist-container .tasklist-top h2 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+.taskbar .tasklist-container .tasklist-top .tasklist {
+  text-align: left;
+  padding: 0 20px;
+}
+.taskbar .tasklist-container .tasklist-top .tasklist .task-container {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+.taskbar .tasklist-container .tasklist-top .tasklist .task-container .checkbox {
+  align-self: center;
+  height: 25px;
+  width: 25px;
+  margin: 6px;
+}
+.taskbar .tasklist-container .tasklist-top .tasklist .task-container .taskname {
+  font-size: 18px;
+}
+.taskbar .tasklist-container .tasklist-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.taskbar .tasklist-container .tasklist-bottom a.add-button {
+  text-decoration: none;
+}
+.taskbar .tasklist-container .tasklist-bottom a.add-button div.add-button {
+  width: fit-content;
+  padding: 13px;
+  background-color: #CEE2A3;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.taskbar .task-details-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.taskbar .task-details-container .back-bar {
+  color: #FFFFFF;
+  background-color: #24605A;
+  padding: 10px 5px;
+}
+.taskbar .task-details-container .back-bar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+}
+.taskbar .task-details-container .back-bar a .back-arrow {
+  color: #FFFFFF;
+  font-size: 40px;
+  padding-top: 3px;
+}
+.taskbar .task-details-container .task-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.taskbar .task-details-container .task-details .details-top {
+  align-self: stretch;
+}
+.taskbar .task-details-container .task-details .details-top .actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  background-color: #ADE3D3;
+  height: fit-content;
+  padding: 8px 10px 12px;
+}
+.taskbar .task-details-container .task-details .details-top .actions a {
+  text-decoration: none;
+}
+.taskbar .task-details-container .task-details .details-top .actions .action {
+  color: #353535;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+}
+.taskbar .task-details-container .task-details .details-top .actions .action .icon {
+  font-size: 50px;
+}
+.taskbar .task-details-container .task-details .details-top .actions .action .icon.edit {
+  font-size: 45px;
+  padding-bottom: 4px;
+}
+.taskbar .task-details-container .task-details .details-top .actions .action .icon.complete {
+  cursor: pointer;
+}
+.taskbar .task-details-container .task-details .details-top .actions .action .icon.incomplete {
+  cursor: pointer;
+}
+.taskbar .task-details-container .task-details .details-top .actions .action .icon.push {
+  font-size: 48px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .taskbar .task-details-container .task-details .details-top .actions a .action .icon {
+    font-size: 40px;
+  }
+  .taskbar .task-details-container .task-details .details-top .actions a .action .icon.edit {
+    font-size: 35px;
+    padding-bottom: 4px;
+  }
+  .taskbar .task-details-container .task-details .details-top .actions a .action .icon.push {
+    font-size: 38px;
+  }
+}
+.taskbar .task-details-container .task-details .details-top .details-top-text {
+  text-align: left;
+  padding: 18px 22px;
+}
+.taskbar .task-details-container .task-details .details-top .details-top-text .task-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.taskbar .task-details-container .task-details .details-top .details-top-text .task-desc {
+  font-size: 18px;
+}
+.taskbar .task-details-container .task-details .details-bottom {
+  font-size: 20px;
+}
+.taskbar .task-details-container .task-details .details-bottom .main-bottom-details {
+  text-align: left;
+  padding: 18px 22px;
+  background-color: #ADE3D3;
+}
+.taskbar .task-details-container .task-details .details-bottom .priority {
+  text-align: left;
+  padding: 10px 22px;
+  color: #FFFFFF;
+  background-color: #DB172D;
+}
+.taskbar .edit-task-container {
+  width: 100%;
+  background-color: #F8F8F8;
+}
+.taskbar .edit-task-container .edit-bar {
+  color: #FFFFFF;
+  background-color: #24605A;
+  padding: 10px 25px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.taskbar .edit-task-container .edit-bar a, .taskbar .edit-task-container .edit-bar div {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  font-size: 28px;
+  align-items: center;
+}
+.taskbar .edit-task-container .edit-bar a .icon, .taskbar .edit-task-container .edit-bar div .icon {
+  color: #FFFFFF;
+  font-size: 40px;
+  padding: 3px 5px 0 0;
+}
+.taskbar .edit-task-container .edit-bar a#submit-form, .taskbar .edit-task-container .edit-bar div#submit-form {
+  cursor: pointer;
+}
+.taskbar .edit-task-container .task-edit-form {
+  text-align: left;
+  padding: 0 22px;
+}
+.taskbar .edit-task-container .task-edit-form form {
+  display: flex;
+  flex-direction: column;
+}
+.taskbar .edit-task-container .task-edit-form form label {
+  display: inline-block;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+.taskbar .edit-task-container .task-edit-form form input, .taskbar .edit-task-container .task-edit-form form select, .taskbar .edit-task-container .task-edit-form form textarea {
+  font-family: Arial;
+  margin-bottom: 25px;
+  padding: 5px;
+  font-size: 17px;
+}
+
+/* account pages styles */
+.account {
+  width: 50%;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.account form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.account form label {
+  display: inline-block;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.account form input, .account form select, .account form textarea {
+  font-family: Arial;
+  margin-bottom: 25px;
+  padding: 5px;
+  font-size: 17px;
+}
+.account form .error_msg:not(:empty) {
+  font-size: 18px;
+  top: -13px;
+  position: relative;
+  font-weight: 500;
+  padding: 4px 8px 5px;
+  background-color: #EDEDED;
+}
+.account form #submit {
+  cursor: pointer;
+  background-color: #CEE2A3;
+  font-size: 20px;
+  width: fit-content;
+  font-weight: bold;
+  padding: 8px 15px 10px;
+  border-radius: 12px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+.App .nav {
+  font-size: 20px;
+  background-color: #CEE2A3;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App .nav .brand-link {
+  font-size: 25px;
+  color: #353535;
+  text-decoration: none;
+}
+.App .nav .brand-link .brand {
+  font-weight: bold;
+  padding: 20px 20px 20px 40px;
+}
+.App .nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 40%;
+  height: fit-content;
+  justify-content: space-evenly;
+  margin: 0;
+  /*align-self: center;*/
+}
+.App .nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.App .components {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+.App .buttonlist {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.App .buttonlist .button {
+  background-color: #CEE2A3;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.App .home {
+  padding-top: 50px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.App .home div {
+  padding-bottom: 15px;
+}
+.App .success {
+  padding-top: 50px;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+/*# sourceMappingURL=App.css.map */

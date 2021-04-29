@@ -1,0 +1,45 @@
+/* account pages styles */
+
+.account {
+  width:50%;
+  padding-top: 50px;
+  margin: 0 auto;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      label {
+        display: inline-block;
+        font-size: 22px;
+        padding-bottom: 10px;
+      }
+
+      input, select, textarea {
+        font-family: Arial;
+        margin-bottom: 25px;
+        padding: 5px;
+        font-size: 17px;
+      }
+
+      .error_msg:not(:empty) {
+        font-size: 18px;
+        top: -13px;
+        position: relative;
+        font-weight: 500;
+        padding: 4px 8px 5px;
+        background-color: $dark-grey;
+      }
+
+      #submit {
+        cursor: pointer;
+        background-color: $lt-green;
+        font-size: 20px;
+        width:fit-content;
+        font-weight: bold;
+        padding: 8px 15px 10px;
+        border-radius: 12px;
+      }
+    }
+}

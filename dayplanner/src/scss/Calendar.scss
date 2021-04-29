@@ -1,0 +1,252 @@
+.calendar {
+  /*padding-top:10px;*/
+  width: 100%;
+  height: 100%;
+  background-color: #EDEDED;
+
+  /* Week styles */
+  .week {
+    display: grid;
+    height:99%;
+    width:100%;
+    justify-content: stretch;
+    background-color: #EDEDED;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .day-header {
+      grid-row: 1;
+      border-bottom: #353535 1px solid;
+    }
+
+    .time-slot {
+      background-color: #ADE3D3;
+      height:100%;
+      border: #353535 0.5px solid;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  /* CSS Grid positions */
+  .monday { grid-area: monday; grid-column: 1; }
+  .tuesday { grid-area: tuesday; grid-column: 2; }
+  .wednesday { grid-area: wednesday; grid-column: 3; }
+  .thursday { grid-area: thursday; grid-column: 4; }
+  .friday { grid-area: friday; grid-column: 5; }
+  .saturday { grid-area: saturday; grid-column: 6; }
+  .sunday { grid-area: sunday; grid-column: 7; }
+
+  .item-800 { grid-row: 2; }
+  .item-900 { grid-row: 3; }
+  .item-1000 { grid-row: 4; }
+  .item-1100 { grid-row: 5; }
+  .item-1200 { grid-row: 6; }
+  .item-1300 { grid-row: 7; }
+  .item-1400 { grid-row: 8; }
+  .item-1500 { grid-row: 9; }
+  .item-1600 { grid-row: 10; }
+  .item-1700 { grid-row: 11; }
+  .item-1800 { grid-row: 12; }
+  .item-1900 { grid-row: 13; }
+  .item-2000 { grid-row: 14; }
+
+  .item-800-start { grid-row-start: 2; }
+  .item-900-start { grid-row-start: 3; }
+  .item-1000-start { grid-row-start: 4; }
+  .item-1100-start { grid-row-start: 5; }
+  .item-1200-start { grid-row-start: 6; }
+  .item-1300-start { grid-row-start: 7; }
+  .item-1400-start { grid-row-start: 8; }
+  .item-1500-start { grid-row-start: 9; }
+  .item-1600-start { grid-row-start: 10; }
+  .item-1700-start { grid-row-start: 11; }
+  .item-1800-start { grid-row-start: 12; }
+  .item-1900-start { grid-row-start: 13; }
+  .item-2000-start { grid-row-start: 14; }
+
+  .item-800-end { grid-row-end: 2; }
+  .item-900-end { grid-row-end: 3; }
+  .item-1000-end { grid-row-end: 4; }
+  .item-1100-end { grid-row-end: 5; }
+  .item-1200-end { grid-row-end: 6; }
+  .item-1300-end { grid-row-end: 7; }
+  .item-1400-end { grid-row-end: 8; }
+  .item-1500-end { grid-row-end: 9; }
+  .item-1600-end { grid-row-end: 10; }
+  .item-1700-end { grid-row-end: 11; }
+  .item-1800-end { grid-row-end: 12; }
+  .item-1900-end { grid-row-end: 13; }
+  .item-2000-end { grid-row-end: 14; }
+}
+
+// event modal styles
+
+.ReactModal__Overlay--after-open {
+  width: 80%;
+  height:90vh;
+  right: 0!important;
+  bottom: 0!important;
+  left: auto!important;
+  top:10vh!important;
+}
+
+.ReactModal__Content--after-open {
+  width:60%;
+  margin: 10% auto 0;
+  padding:0!important;
+  border-radius: 30px!important;
+  display: flex;
+  overflow-y: hidden!important;
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  outline: none;
+  height:55%!important;
+  .event-details-container{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    .event-details {
+      height:100%;
+      flex-grow: 1;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .top-bar {
+        color: $white;
+        background-color: $dark-teal;
+        padding: 20px 30px;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        a.edit {
+          text-decoration: none;
+          width: fit-content;
+          .action {
+            color: $white;
+            display: flex;
+            //flex-direction: column;
+            align-items: center;
+            .icon {
+              font-size: 30px;
+              padding-right:8px;
+            }
+          }
+        }
+        .details-top {
+          .event-title {
+            font-size:28px;
+            margin-bottom: 5px;
+          }
+          .event-time-date {
+            .event-date {
+              font-size: 20px;
+              margin-bottom: 3px;
+            }
+            .event-time-range {
+              font-size: 18px;
+              margin-bottom: 3px;
+            }
+          }
+        }
+      }
+      .details-bottom {
+        padding: 25px 30px;
+        font-size:18px;
+        overflow-y: scroll;
+        height:100%;
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          background: transparent;
+
+        }
+        &::-webkit-scrollbar-thumb {
+          background: $darker-grey;
+          border-radius: 10px;
+        }
+        .description {
+          padding-bottom: 30px;
+        }
+        hr {
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+  .edit-event-container {
+    width:100%;
+    .edit-bar {
+      color: $white;
+      background-color: $dark-teal;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      font-size:20px;
+      a {
+        text-decoration: none;
+        color: $white;
+        display: flex;
+        align-items: center;
+        .icon {
+          padding-top:1px;
+          font-size: 40px!important;
+        }
+      }
+      .action {
+        display: flex;
+        //flex-direction: column;
+        align-items: center;
+        #submit-form {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          .icon {
+            font-size: 27px;
+            padding-right: 6px;
+          }
+        }
+      }
+    }
+    .event-edit-form {
+      max-height:100%;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $darker-grey;
+        border-radius: 10px;
+      }
+      form {
+        margin-bottom:60px;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        label {
+          display: inline-block;
+          font-size: 18px;
+          padding-bottom: 4px;
+        }
+        input, select, textarea {
+          font-family: Arial;
+          margin-bottom: 10px;
+          padding:4px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
