@@ -14,7 +14,7 @@
         
         $name = "";
         $email = "";
-    $question = "";
+        $question = "";
         
         if(isset($_POST["name"])) { $name = sanitize($_POST["name"]); }
     	if(isset($_POST["email"])) { $email = sanitize($_POST["email"]); }

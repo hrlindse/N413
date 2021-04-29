@@ -1,0 +1,3 @@
+<div>
+    Daily View
+</div>
