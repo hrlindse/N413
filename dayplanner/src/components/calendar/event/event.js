@@ -42,18 +42,18 @@ function getTimeFormatted(date){
         //am
         if(hour===0){
             //midnight
-            time += "12:" + minutes + " am";
+            time += "12:" + minutes + "am";
         } else {
-            time += hour + ":" + minutes + " am";
+            time += hour + ":" + minutes + "am";
         }
 
     } else if (hour>=12) {
         //pm
         if (hour === 12) {
             //noon
-            time += "12:" + minutes + " pm";
+            time += "12:" + minutes + "pm";
         } else {
-            time += (hour-12).toString() + ":" + minutes + " pm";
+            time += (hour-12).toString() + ":" + minutes + "pm";
         }
     }
     return time;
@@ -67,7 +67,7 @@ export default function Event(props){
 
     return(
         <div className={getClasses(props.item.startDateTime, props.item.endDateTime)} onClick={() => props.openModal(props.item.id)}>
-            <div className={"title"}>{props.item.title}</div><br />
+            <div className={"title"}>{props.item.title}</div>
             <div className={"time-range"}>
                 {getTimeFormatted(props.item.startDateTime)} - {getTimeFormatted(props.item.endDateTime)}
             </div>

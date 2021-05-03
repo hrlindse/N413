@@ -13,10 +13,23 @@
     flex-direction: column;
     .tasklist-top {
       flex-grow: 1;
-      h2 {
-        margin-top:0;
-        padding-top:20px;
+      .tasklist-topbar {
+        display:flex;
+        width:100%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px 0;
+        h2 {
+          margin:0;
+          vertical-align: center;
+        }
+        .icon {
+          margin-top:8px;
+          font-size: 35px;
+          cursor:pointer;
+        }
       }
+
       .tasklist{
         text-align:left;
         padding: 0 20px;

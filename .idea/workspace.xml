@@ -2,543 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="162c3014-760e-451a-9a62-3ea6e82f915b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/account/Account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/account/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/account/logout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/account/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/account/success.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/Daily.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/Month.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/Week.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/elements/checkbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/elements/completedControl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/elements/projects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/task/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/task/details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/task/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/task/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/taskbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/php/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/php/calendar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/php/n413connect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/php/projects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/php/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/php/tasks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/scss/Account.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/scss/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/scss/Calendar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dayplanner/src/scss/Taskbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/cache/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/constants.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/doctypes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/foreign_chars.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/hooks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/memcached.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/migration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/mimes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/profiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/smileys.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/config/user_agents.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/controllers/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/controllers/Calendar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/controllers/Litjams.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/controllers/Welcome.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/controllers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/core/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/helpers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/hooks/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/language/english/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/language/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/libraries/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/logs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/models/Calendar_model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/models/Tasks_model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/models/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/third_party/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/auth/account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/auth/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/auth/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/auth/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/calendar/daily.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/calendar/month.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/calendar/week.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/cli/error_404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/cli/error_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/cli/error_exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/cli/error_general.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/cli/error_php.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/cli/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/html/error_404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/html/error_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/html/error_exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/html/error_general.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/html/error_php.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/errors/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/tasks/detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/tasks/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/tasks/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/application/views/templates/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/bodiddley.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/es335.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/flying-v.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/gretsch6120.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/hamer-5-neck.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/lespaul.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/neilsen5-neck.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/ricky12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/ricky330-12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/sg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/strat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/strat_lg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/images/telecaster.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/assets/js/jquery-3.5.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/contributing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/react/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/readme.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Benchmark.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/CodeIgniter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Common.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Exceptions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Hooks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Input.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Loader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Log.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Output.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Security.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/URI.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/Utf8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/compat/hash.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/compat/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/compat/mbstring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/compat/password.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/compat/standard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/core/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/DB.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/DB_cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/DB_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/DB_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/DB_query_builder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/DB_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/DB_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/cubrid/cubrid_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/cubrid/cubrid_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/cubrid/cubrid_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/cubrid/cubrid_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/cubrid/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/ibase/ibase_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/ibase/ibase_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/ibase/ibase_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/ibase/ibase_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/ibase/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mssql/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mssql/mssql_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mssql/mssql_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mssql/mssql_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mssql/mssql_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysql/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysql/mysql_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysql/mysql_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysql/mysql_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysql/mysql_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysqli/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysqli/mysqli_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysqli/mysqli_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysqli/mysqli_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/mysqli/mysqli_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/oci8/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/oci8/oci8_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/oci8/oci8_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/oci8/oci8_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/oci8/oci8_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/odbc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/odbc/odbc_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/odbc/odbc_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/odbc/odbc_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/odbc/odbc_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/pdo_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/pdo_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/pdo_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/pdo_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_4d_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_4d_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_cubrid_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_cubrid_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_dblib_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_dblib_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_firebird_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_firebird_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_ibm_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_ibm_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_informix_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_informix_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_mysql_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_mysql_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_oci_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_oci_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_odbc_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_odbc_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_pgsql_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_pgsql_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_sqlite_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_sqlite_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/postgre/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/postgre/postgre_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/postgre/postgre_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/postgre/postgre_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/postgre/postgre_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite/sqlite_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite/sqlite_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite/sqlite_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite/sqlite_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite3/sqlite3_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite3/sqlite3_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite3/sqlite3_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlite3/sqlite3_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlsrv/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlsrv/sqlsrv_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlsrv/sqlsrv_forge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlsrv/sqlsrv_result.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/drivers/sqlsrv/sqlsrv_utility.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/database/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/fonts/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/fonts/texb.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/array_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/captcha_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/cookie_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/date_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/directory_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/download_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/email_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/file_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/form_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/html_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/inflector_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/language_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/number_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/path_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/security_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/smiley_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/string_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/text_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/typography_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/url_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/helpers/xml_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/calendar_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/date_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/db_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/email_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/form_validation_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/ftp_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/imglib_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/migration_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/number_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/pagination_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/profiler_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/unit_test_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/english/upload_lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/language/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/Cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/drivers/Cache_apc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/drivers/Cache_dummy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/drivers/Cache_file.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/drivers/Cache_memcached.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/drivers/Cache_redis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/drivers/Cache_wincache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/drivers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cache/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Calendar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Encrypt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Encryption.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Form_validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Ftp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Image_lib.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Javascript.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Javascript/Jquery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Javascript/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Migration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Parser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Profiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/Session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/SessionHandlerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/Session_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/drivers/Session_database_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/drivers/Session_files_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/drivers/Session_memcached_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/drivers/Session_redis_driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/drivers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Session/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Trackback.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Typography.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Unit_test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Upload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/User_agent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Xmlrpc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Xmlrpcs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/Zip.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/system/libraries/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/.buildinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/DCO.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_downloads/ELDocs.tmbundle.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_images/appflowchart.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_images/smile.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/basic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/ci-icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/comment-bright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/comment-close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/comment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/css/badge_only.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/css/citheme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/css/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/doctools.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/down-pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/images/ci-icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/jquery-3.1.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/js/oldtheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/js/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/pygments.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/searchtools.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/underscore-1.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/underscore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/up-pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/_static/websupport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/changelog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/contributing/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/caching.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/call_function.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/configuration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/connecting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/db_driver_reference.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/examples.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/forge.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/helpers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/metadata.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/queries.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/query_builder.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/results.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/transactions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/database/utilities.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/documentation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/alternative_php.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/ancillary_classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/autoloader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/caching.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/cli.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/common_functions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/compatibility_functions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/controllers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/core_classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/creating_drivers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/creating_libraries.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/credits.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/drivers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/environments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/errors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/helpers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/hooks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/libraries.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/managing_apps.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/models.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/profiling.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/requirements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/reserved_names.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/routing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/security.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/styleguide.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/urls.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/views.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/general/welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/genindex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/array_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/captcha_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/cookie_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/date_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/directory_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/download_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/email_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/file_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/form_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/html_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/inflector_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/language_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/number_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/path_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/security_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/smiley_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/string_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/text_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/typography_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/url_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/helpers/xml_helper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/downloads.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/troubleshooting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_120.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_130.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_131.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_132.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_133.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_140.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_141.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_150.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_152.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_153.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_154.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_160.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_161.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_162.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_163.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_170.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_171.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_172.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_200.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_201.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_202.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_203.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_210.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_211.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_212.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_213.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_214.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_220.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_221.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_222.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_223.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_300.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_301.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_302.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_303.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_304.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_305.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_306.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_310.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_311.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_3110.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_3111.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_312.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_313.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_314.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_315.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_316.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_317.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_318.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_319.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrade_b11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/installation/upgrading.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/benchmark.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/caching.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/calendar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/config.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/encrypt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/encryption.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/file_uploading.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/form_validation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/ftp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/image_lib.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/javascript.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/language.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/loader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/migration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/parser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/security.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/sessions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/trackback.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/typography.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/unit_testing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/uri.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/user_agent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/xmlrpc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/libraries/zip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/license.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/objects.inv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/overview/appflow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/overview/at_a_glance.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/overview/features.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/overview/getting_started.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/overview/goals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/overview/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/overview/mvc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/searchindex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/tutorial/conclusion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/tutorial/create_news_items.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/tutorial/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/tutorial/news_section.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/user_guide/tutorial/static_pages.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/elements/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dayplanner/src/components/elements/phpurl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/n413_site/n413post.php" beforeDir="false" afterPath="$PROJECT_DIR$/n413_site/n413post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/App.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/account/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/account/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/account/logout.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/account/logout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/account/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/account/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/calendar/Week.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/Week.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/calendar/event/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/elements/checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/elements/checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/elements/completedControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/elements/completedControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/elements/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/elements/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/task/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/task/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/task/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/task/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/task/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/task/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/task/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/task/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/components/taskbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/components/taskbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/php/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/php/calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/php/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/php/tasks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/scss/Calendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/scss/Calendar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dayplanner/src/scss/Taskbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dayplanner/src/scss/Taskbar.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -576,19 +69,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\N413\dayplanner\src\components\elements" />
-      <recent name="C:\xampp\htdocs\N413\dayplanner\src\scss" />
-      <recent name="C:\xampp\htdocs\N413\dayplanner\src" />
-      <recent name="C:\xampp\htdocs\N413\dayplanner\src\php" />
-      <recent name="C:\xampp\htdocs\N413\dayplanner\src\php\task" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\N413\dayplanner\src\php\account" />
       <recent name="C:\xampp\htdocs\N413\dayplanner\public" />
       <recent name="C:\xampp\htdocs\N413\dayplanner\src\php" />
       <recent name="C:\xampp\htdocs\N413\planner" />
       <recent name="C:\xampp\htdocs\N413\planner\app\Controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\N413\dayplanner\src\components\elements" />
+      <recent name="C:\xampp\htdocs\N413\dayplanner\src\scss" />
+      <recent name="C:\xampp\htdocs\N413\dayplanner\src" />
+      <recent name="C:\xampp\htdocs\N413\dayplanner\src\php" />
+      <recent name="C:\xampp\htdocs\N413\dayplanner\src\php\task" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -630,7 +123,9 @@
       <workItem from="1619012007334" duration="3978000" />
       <workItem from="1619047450112" duration="20300000" />
       <workItem from="1619108826439" duration="11111000" />
-      <workItem from="1619709944290" duration="10823000" />
+      <workItem from="1619709944290" duration="16211000" />
+      <workItem from="1619986300967" duration="17519000" />
+      <workItem from="1620057858027" duration="14139000" />
     </task>
     <servers />
   </component>

@@ -9,7 +9,7 @@ export default function Home() {
                 Welcome to Day Planner!
             </div>
             <div>
-                <Link to={"/login"}>Log in</Link> or <Link to={"/login"}>register</Link> to get started
+                <Link to={"/login"}>Log in</Link> or <Link to={"/register"}>register</Link> to get started
             </div>
         </div>
     );

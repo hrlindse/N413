@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import { Link, useParams, useHistory} from "react-router-dom";
 import { IoIosClose, IoMdCheckmark } from "react-icons/io";
 import Projects from "../../elements/projects";
+import PhpUrl from "../../elements/phpurl";
 
 function toISO(dateObj) {
     //convert date to ISO for Date input
@@ -18,7 +19,7 @@ function toISO(dateObj) {
 export default function Edit(props) {
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(false);
-    const url = 'http://localhost/N413/dayplanner/src/php/calendar.php';
+    const url = PhpUrl() + 'php/calendar.php';
     let {id} = useParams();
     const history= useHistory();
     // state management for form fields
@@ -30,41 +31,24 @@ export default function Edit(props) {
     const [tags, setTags] = useState();
     const [priority, setPriority] = useState();
 
-    if (!loaded && id === undefined) {
-        console.log("id undefined");
-        setLoaded(true);
-    } else if(!loaded && id !== undefined && props.loadGet===true ){
-        axios.get(url+`?id=`+id).then(response => {
-            console.log("Response: ");
-            console.log(response);
-            setData(response.data);
-            console.log("Data: ");
-            console.log(data);
-
-        }).then( () => {
-            console.log("about to map");
-            console.log(data);
-            if(data && props.loadGet===true) {
-                data.map((item, key) => {
-                    setTitle(item.title);
-                    setDescription(item.description);
-                    setStart(toISO(new Date(item.startDateTime)));
-                    setEnd(toISO(new Date(item.endDateTime)));
-                    setProject(item.projectID);
-                    setTags(item.tags);
-                    setPriority(item.priority);
-                });
-                setLoaded(true);
-            }
-        } );
-    }
-
 
     function handleSubmit() {
         console.log('Submission: ' + title);
-        console.log(props);
+        // console.log(props);
+        if (title == "" ) {
+            alert("Title cannot be empty");
+            return false;
+        }
+        if (start == null ) {
+            alert("Start date cannot be empty");
+            return false;
+        }
+        if (end == null ) {
+            alert("End date cannot be empty");
+            return false;
+        }
         setLoaded(false);
-        axios.patch(url, {
+        axios.post(url, {
             id: id,
             title: title,
             description: description,
@@ -84,10 +68,44 @@ export default function Edit(props) {
             props.loadControl(false);
             history.push(`/event/details/` + id);
         });
-
-
     }
 
+    if ( !loaded && id === undefined) {
+        console.log("id undefined");
+    } else if (!loaded ) {
+        axios.get(url+`?id=`+id).then(response => {
+            // console.log("Response: ");
+            // console.log(response);
+            setData(response.data);
+            // console.log("Data: ");
+            // console.log(data);
+        }).then( () => {
+                // console.log("about to map");
+                // console.log(data);
+                if(data) {
+                    data.map((item, key) => {
+                        setTitle(item.title);
+                        setDescription(item.description);
+                        setStart(toISO(new Date(item.startDateTime)));
+                        setEnd(toISO(new Date(item.endDateTime)));
+                        setProject(item.projectID);
+                        setTags(item.tags);
+                        setPriority(item.priority);
+                        console.log("edit details");
+                    });
+
+                    setLoaded(true);
+                }
+            }
+        );
+    }
+
+    useEffect(() => {
+        let isMounted = true; // note this flag denote mount status
+
+        return () => { isMounted = false; }; // use effect cleanup to set flag false, if unmounted
+        // setTuesday(new Date.setDate(monday.getDate() + 1));
+    }, [loaded]);
 
     if (!loaded) {
         return (

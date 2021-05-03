@@ -1,15 +1,15 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import { Link, useHistory} from "react-router-dom";
 import { IoCreateOutline } from "react-icons/io5";
+import PhpUrl from "../../elements/phpurl";
 
 
 export default function Details(props) {
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(false);
 
-    const url = 'http://localhost/N413/dayplanner/src/php/calendar.php';
-    console.log(props);
+    const url = PhpUrl() + 'php/calendar.php';
     const history= useHistory();
     let id = props.eventID;
     if (id==="new"){
@@ -73,16 +73,22 @@ export default function Details(props) {
         return formatted;
     }
 
-    if(!loaded){
+
+    useEffect(() => {
+        let isMounted = true; // note this flag denote mount status
+        console.log("Get details");
         axios.get(url+`?id=`+id).then(response => {
-            console.log("Response: ");
-            console.log(response);
-            setData(response.data);
-            console.log("Data: ");
-            console.log(data);
+            // console.log("Response: ");
+            // console.log(response);
+            if (isMounted) setData(response.data);
+            // console.log("Data: ");
+            // console.log(data);
             setLoaded(true);
         });
-    }
+        return () => { isMounted = false }; // use effect cleanup to set flag false, if unmounted
+    }, [loaded]);
+
+
     return (
         <div className="event-details-container">
             {!loaded ? (

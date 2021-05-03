@@ -13,19 +13,21 @@ import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
 import { createBrowserHistory } from "history";
 import axios from "axios";
 import Account from "./components/account/Account";
+import PhpUrl from "./components/elements/phpurl";
+import Error from "./components/elements/error";
 
 export default function App() {
-    const history = createBrowserHistory();
+    const history = createBrowserHistory({basename: process.env.PUBLIC_URL});
     const [data, setData] = useState();
     const [loggedin, setLoggedin] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
-    const url = 'http://localhost/N413/dayplanner/src/php/auth.php';
+    const url = PhpUrl() + 'php/auth.php';
 
     function checkLogin(){
         if(localStorage.getItem("token") !== null && localStorage.getItem("token") != undefined) {
             console.log("loggedin");
-            console.log(localStorage.getItem("token"));
+            console.log((localStorage.getItem("token")).substring(1,(localStorage.getItem("token").length-1)));
             setLoggedin(true);
         } else {
             console.log("not logged in");
@@ -44,7 +46,7 @@ export default function App() {
 
     return (
         <div className="App">
-            <BrowserRouter history={history}>
+            <BrowserRouter basename={process.env.PUBLIC_URL} history={history}>
                 {!loaded ?
                     [
                         <div className="nav">
@@ -61,16 +63,19 @@ export default function App() {
                                 <Route path="/success/:id">
                                     <Success/>
                                 </Route>
+                                <Route path="/error/:id">
+                                    <Error/>
+                                </Route>
                                 {!loggedin ?
                                     [
                                         <Route path="/home">
-                                            <Home/>
+                                            <Home />
                                         </Route>,
                                         <Route path="/login">
-                                            <Login/>
+                                            <Login loggedin={loggedin} setLogin={setLoggedin} />
                                         </Route>,
                                         <Route path="/register">
-                                            <Register/>
+                                            <Register loggedin={loggedin} setLogin={setLoggedin} />
                                         </Route>,
                                         <Route>
                                             <Home/>
@@ -78,7 +83,7 @@ export default function App() {
                                     ]
                                     : [
                                     <Route path="/logout">
-                                        <Logout/>
+                                        <Logout loggedin={loggedin} setLogin={setLoggedin} />
                                     </Route>,
                                     <Route>
                                         <div className="components">

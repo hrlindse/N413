@@ -18,13 +18,68 @@
 .calendar .week .day-header {
   grid-row: 1;
   border-bottom: #353535 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calendar .week .day-header h3 {
+  margin: 15px 0 0;
+}
+.calendar .week .day-header .date {
+  margin-bottom: 15px;
+}
+.calendar .week .day-header.monday {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.calendar .week .day-header.monday .icon {
+  padding-right: 10px;
+}
+.calendar .week .day-header.monday .day-label {
+  flex-grow: 1;
+}
+.calendar .week .day-header.sunday {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.calendar .week .day-header.sunday .icon {
+  padding-left: 10px;
+}
+.calendar .week .day-header.sunday .day-label {
+  flex-grow: 1;
+}
+.calendar .week .day-header .icon {
+  font-size: 30px;
+  cursor: pointer;
 }
 .calendar .week .time-slot {
   background-color: #ADE3D3;
   height: 100%;
   border: #353535 0.5px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0 3px;
 }
 .calendar .week .time-slot:hover {
+  cursor: pointer;
+}
+.calendar .week .time-slot .title {
+  font-weight: bold;
+  margin: 5px 0;
+}
+.calendar .week .add-button {
+  position: absolute;
+  bottom: 0px;
+  margin: 35px 15px;
+  width: fit-content;
+  padding: 13px;
+  background-color: #CEE2A3;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
 }
 .calendar .monday {
@@ -54,6 +109,27 @@
 .calendar .sunday {
   grid-area: sunday;
   grid-column: 7;
+}
+.calendar .item-100 {
+  grid-row: 2;
+}
+.calendar .item-200 {
+  grid-row: 2;
+}
+.calendar .item-300 {
+  grid-row: 2;
+}
+.calendar .item-400 {
+  grid-row: 2;
+}
+.calendar .item-500 {
+  grid-row: 2;
+}
+.calendar .item-600 {
+  grid-row: 2;
+}
+.calendar .item-700 {
+  grid-row: 2;
 }
 .calendar .item-800 {
   grid-row: 2;
@@ -94,6 +170,27 @@
 .calendar .item-2000 {
   grid-row: 14;
 }
+.calendar .item-100-start {
+  grid-row-start: 2;
+}
+.calendar .item-200-start {
+  grid-row-start: 2;
+}
+.calendar .item-300-start {
+  grid-row-start: 2;
+}
+.calendar .item-400-start {
+  grid-row-start: 2;
+}
+.calendar .item-500-start {
+  grid-row-start: 2;
+}
+.calendar .item-600-start {
+  grid-row-start: 2;
+}
+.calendar .item-700-start {
+  grid-row-start: 2;
+}
 .calendar .item-800-start {
   grid-row-start: 2;
 }
@@ -131,10 +228,43 @@
   grid-row-start: 13;
 }
 .calendar .item-2000-start {
-  grid-row-start: 14;
+  grid-row-start: 13;
+}
+.calendar .item-2100-start {
+  grid-row-start: 13;
+}
+.calendar .item-2200-start {
+  grid-row-start: 13;
+}
+.calendar .item-2300-start {
+  grid-row-start: 13;
+}
+.calendar .item-2400-start {
+  grid-row-start: 13;
+}
+.calendar .item-100-end {
+  grid-row-end: 2;
+}
+.calendar .item-200-end {
+  grid-row-end: 2;
+}
+.calendar .item-300-end {
+  grid-row-end: 3;
+}
+.calendar .item-400-end {
+  grid-row-end: 3;
+}
+.calendar .item-500-end {
+  grid-row-end: 3;
+}
+.calendar .item-600-end {
+  grid-row-end: 3;
+}
+.calendar .item-700-end {
+  grid-row-end: 3;
 }
 .calendar .item-800-end {
-  grid-row-end: 2;
+  grid-row-end: 3;
 }
 .calendar .item-900-end {
   grid-row-end: 3;
@@ -170,6 +300,18 @@
   grid-row-end: 13;
 }
 .calendar .item-2000-end {
+  grid-row-end: 14;
+}
+.calendar .item-2100-end {
+  grid-row-end: 14;
+}
+.calendar .item-2200-end {
+  grid-row-end: 14;
+}
+.calendar .item-2300-end {
+  grid-row-end: 14;
+}
+.calendar .item-2400-end {
   grid-row-end: 14;
 }
 
@@ -276,13 +418,14 @@
   flex-direction: row-reverse;
   font-size: 20px;
 }
-.ReactModal__Content--after-open .edit-event-container .edit-bar a {
+.ReactModal__Content--after-open .edit-event-container .edit-bar a, .ReactModal__Content--after-open .edit-event-container .edit-bar .close-button {
   text-decoration: none;
   color: #FFFFFF;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-.ReactModal__Content--after-open .edit-event-container .edit-bar a .icon {
+.ReactModal__Content--after-open .edit-event-container .edit-bar a .icon, .ReactModal__Content--after-open .edit-event-container .edit-bar .close-button .icon {
   padding-top: 1px;
   font-size: 40px !important;
 }
@@ -348,9 +491,21 @@
 .taskbar .tasklist-container .tasklist-top {
   flex-grow: 1;
 }
-.taskbar .tasklist-container .tasklist-top h2 {
-  margin-top: 0;
-  padding-top: 20px;
+.taskbar .tasklist-container .tasklist-top .tasklist-topbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+}
+.taskbar .tasklist-container .tasklist-top .tasklist-topbar h2 {
+  margin: 0;
+  vertical-align: center;
+}
+.taskbar .tasklist-container .tasklist-top .tasklist-topbar .icon {
+  margin-top: 8px;
+  font-size: 35px;
+  cursor: pointer;
 }
 .taskbar .tasklist-container .tasklist-top .tasklist {
   text-align: left;

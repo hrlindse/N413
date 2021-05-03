@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 import axios from "axios";
 import {IoCheckmarkOutline, IoCloseOutline} from "react-icons/io5";
+import PhpUrl from "./phpurl";
 
 export default function CompletedControl(props) {
     // const [data, setData] = useState();
     const [complete, setComplete] = useState(props.complete);
     const [loaded, setLoaded] = useState(true);
 
-    const url = 'http://localhost/N413/dayplanner/src/php/tasks.php';
+    const url = PhpUrl() + 'php/tasks.php';
 
     // if (!loaded) {
     //     // console.log("Checkbox props:");
@@ -17,7 +18,7 @@ export default function CompletedControl(props) {
 
     function markComplete() {
         setLoaded(false);
-        axios.patch(url, {id: props.id, completed: 1}).then(response => {
+        axios.post(url, {id: props.id, completed: 1}).then(response => {
             // setData(response.data);
             // console.log("mark complete Data: ");
             // console.log(data);
@@ -29,7 +30,7 @@ export default function CompletedControl(props) {
 
     function markIncomplete() {
         setLoaded(false);
-        axios.patch(url, {id: props.id, completed: 0}).then(response => {
+        axios.post(url, {id: props.id, completed: 0}).then(response => {
             // setData(response.data);
             // console.log("Data: ");
             // console.log(data);

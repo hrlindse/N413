@@ -11,10 +11,12 @@ export default function Success(props) {
     if(localStorage.getItem("token") !== null && localStorage.getItem("token") != undefined) {
         console.log("Logging out");
         console.log(localStorage.removeItem("token"));
+        props.setLogin(false);
         history.push(`/success/3`);
 
     } else {
         console.log("already logged out");
+        props.setLogin(false);
         history.push(`/success/3`);
 
     }

@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import { useHistory} from "react-router-dom";
+import PhpUrl from "../elements/phpurl";
 
-export default function Login() {
+export default function Login(props) {
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(true);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [failed, setFailed] = useState("");
-    const url = 'http://localhost/N413/dayplanner/src/php/auth.php';
+    const url = PhpUrl() + 'php/auth.php';
     const history= useHistory();
 
     function handleSubmit() {
@@ -24,9 +25,11 @@ export default function Login() {
             // console.log(data);
             if (response.data.status == 1) {
                 localStorage.setItem("token", JSON.stringify(response.data.token));
+                props.setLogin(true);
                 history.push(`/success/1`);
         }}).catch(() => {
             console.log('Incorrect Login Info');
+            history.push(`/error/login`);
         });
     }
 
@@ -34,7 +37,7 @@ export default function Login() {
         if (data != undefined) {
             if (data.status == "1") {
                 localStorage.setItem("token", JSON.stringify(data.token));
-                history.push(`/success/2`);
+                history.push(`/success/1`);
             } else {
                 if(data.failed !== undefined) {setFailed(data.failed)}
                 setLoaded(true);

@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, useHistory} from "react-router-dom";
 import { IoIosClose, IoMdCheckmark } from "react-icons/io";
 import Projects from "../elements/projects";
+import PhpUrl from "../elements/phpurl";
 
 // function toISO(dateObj) {
 //     //convert date to ISO for Date input
@@ -18,24 +19,34 @@ import Projects from "../elements/projects";
 export default function Add(props) {
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(true);
-    const url = 'http://localhost/N413/dayplanner/src/php/tasks.php';
+    const [uid, setUid] = useState((localStorage.getItem("token")).substring(1,(localStorage.getItem("token").length-1)));
+    const url = PhpUrl() + 'php/tasks.php';
     const history= useHistory();
 
 
 
     // state management for form fields
-    const [title, setTitle] = useState();
-    const [description, setDescription] = useState();
-    const [date, setDate] = useState();
-    const [project, setProject] = useState();
-    const [tags, setTags] = useState();
-    const [priority, setPriority] = useState();
+    const [title, setTitle] = useState("");
+    const [description, setDescription] = useState("");
+    const [date, setDate] = useState(null);
+    const [project, setProject] = useState(null);
+    const [tags, setTags] = useState("");
+    const [priority, setPriority] = useState(null);
 
 
     function handleSubmit() {
         console.log('Submission: ' + title);
+        if (title == "" ) {
+            alert("Title cannot be empty");
+            return false;
+        }
+        if (date == null ) {
+            alert("Date cannot be empty");
+            return false;
+        }
         setLoaded(false);
         axios.post(url, {
+            uid: uid,
             title: title,
             description: description,
             date: date,
@@ -43,11 +54,11 @@ export default function Add(props) {
             tags: tags,
             priority: priority
         }).then(response => {
-            console.log("Response: ");
-            console.log(response);
+            // console.log("Response: ");
+            // console.log(response);
             setData(response.data);
-            console.log("Data: ");
-            console.log(data);
+            // console.log("Data: ");
+            // console.log(data);
             history.push(`/task/list/`);
         });
 

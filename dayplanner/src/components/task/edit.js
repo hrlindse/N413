@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, useParams, useHistory} from "react-router-dom";
 import { IoCheckmarkOutline, IoCloseOutline } from "react-icons/io5";
 import Projects from "../elements/projects";
+import PhpUrl from "../elements/phpurl";
 
 function toISO(dateObj) {
     //convert date to ISO for Date input
@@ -16,7 +17,7 @@ function toISO(dateObj) {
 export default function Edit(props) {
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(true);
-    const url = 'http://localhost/N413/dayplanner/src/php/tasks.php';
+    const url = PhpUrl() + 'php/tasks.php';
     let {id} = useParams();
     const history= useHistory();
 
@@ -44,7 +45,7 @@ export default function Edit(props) {
     function handleSubmit() {
         console.log('Submission: ' + title);
         setLoaded(false);
-        axios.patch(url, {
+        axios.post(url, {
             id: id,
             title: title,
             description: description,

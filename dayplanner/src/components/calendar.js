@@ -12,7 +12,7 @@ import Month from '../components/calendar/Month';
 function Calendar() {
         return (
             <div className="calendar">
-                <BrowserRouter>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
                     {/*<div className="buttonlist">*/}
                     {/*    <Link className="button" to="/daily">Daily</Link><br/>*/}
                     {/*    <Link className="button" to="/week">Week</Link><br/>*/}

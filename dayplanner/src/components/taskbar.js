@@ -11,11 +11,11 @@ import Edit from './task/edit';
 import Details from './task/details';
 
 export default function Taskbar() {
-    const taskbarHistory = createBrowserHistory();
+    const taskbarHistory = createBrowserHistory({basename : process.env.PUBLIC_URL});
 
     return (
         <div className="taskbar">
-            <BrowserRouter history={taskbarHistory}>
+            <BrowserRouter basename={process.env.PUBLIC_URL} history={taskbarHistory}>
                 <Switch>
                     <Route path="/task/list">
                         <List />
@@ -33,7 +33,7 @@ export default function Taskbar() {
                     <Route path="/task/details">
                         <Details />
                     </Route>
-                    <Route >
+                    <Route> 
                         <List />
                     </Route>
                 </Switch>

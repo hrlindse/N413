@@ -3,21 +3,22 @@ import axios from "axios";
 import { Link, useParams} from "react-router-dom";
 import { IoChevronBackOutline, IoCreateOutline } from "react-icons/io5";
 import CompletedControl from "../elements/completedControl";
+import PhpUrl from "../elements/phpurl";
 
 export default function Details() {
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(false);
 
-    const url = 'http://localhost/N413/dayplanner/src/php/tasks.php';
+    const url = PhpUrl() + 'php/tasks.php';
     let { id } = useParams();
 
     if(!loaded){
         axios.get(url+`?id=`+id).then(response => {
-            // console.log("Response: ");
-            // console.log(response);
+            console.log("Response: ");
+            console.log(response);
             setData(response.data);
-            // console.log("Data: ");
-            // console.log(data);
+            console.log("Data: ");
+            console.log(data);
             setLoaded(true);
         });
     }
@@ -60,10 +61,10 @@ export default function Details() {
                                     <div className={"main-bottom-details"}>
                                         <div className={"date"}>Date: {date.toLocaleString().substring(0, date.toLocaleString().indexOf(","))}</div>
                                         {/*<div className={"due"}>Due: {item.title}</div>*/}
-                                        <div className={"project"}>Project: {item.projectTitle}</div>
-                                        <div className={"tags"}>Tags: {item.tags}</div>
+                                        <div className={"project"}>Project: {!(item.projectTitle==null) ? (item.projectTitle) : "None" }</div>
+                                        <div className={"tags"}>Tags: {!(item.tags=="null") ? (item.tags) : "None" }</div>
                                     </div>
-                                    <div className={"priority"}>Priority: {item.priority}</div>
+                                    <div className={"priority"}>Priority: {!(item.priority==null) ? (item.priority) : "None" }</div>
                                 </div>
                             </div>
                     );

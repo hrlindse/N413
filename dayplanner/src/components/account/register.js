@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import { useHistory} from "react-router-dom";
+import PhpUrl from "../elements/phpurl";
 
-export default function Register() {
+export default function Register(props) {
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(true);
     const [username, setUsername] = useState("");
@@ -13,7 +14,7 @@ export default function Register() {
     const [email_exists, setEmail_exists] = useState("");
     const [email_validate, setEmail_validate] = useState("");
     const [password_length, setPassword_length] = useState("");
-    const url = 'http://localhost/N413/dayplanner/src/php/register.php';
+    const url = PhpUrl() + 'php/register.php';
     const history= useHistory();
 
     function handleSubmit() {
@@ -28,13 +29,16 @@ export default function Register() {
             setData(response.data);
             console.log("Data: ");
             console.log(data);
-
+        }).catch(() => {
+            console.log('Register error');
+            history.push(`/error/register`);
         });
     }
     if(!loaded) {
         if (data != undefined) {
             if (data.status == "1") {
                 localStorage.setItem("token", JSON.stringify(data.token));
+                props.setLogin(true);
                 history.push(`/success/2`);
             } else {
                 if(data.username_length !== undefined) {setUsername_length(data.username_length)}

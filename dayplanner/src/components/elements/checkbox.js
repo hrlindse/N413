@@ -1,13 +1,14 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {IoIosCheckbox, IoIosSquareOutline, IoIosSquare} from "react-icons/io";
+import PhpUrl from "./phpurl";
 
 export default function Checkbox(props) {
     // const [data, setData] = useState();
     const [complete, setComplete] = useState(props.complete);
     const [loaded, setLoaded] = useState(true);
 
-    const url = 'http://localhost/N413/dayplanner/src/php/tasks.php';
+    const url = PhpUrl() + 'php/tasks.php';
 
     // if (!loaded) {
     //     // console.log("Checkbox props:");
@@ -17,7 +18,8 @@ export default function Checkbox(props) {
 
     function markComplete() {
         setLoaded(false);
-        axios.patch(url, {id: props.id, completed: 1}).then(response => {
+        console.log("updating: "+ props.itemid);
+        axios.post(url, {id: props.itemid, completed: 1}).then(response => {
             // setData(response.data);
             // console.log("mark complete Data: ");
             // console.log(data);
@@ -29,7 +31,8 @@ export default function Checkbox(props) {
 
     function markIncomplete() {
         setLoaded(false);
-        axios.patch(url, {id: props.id, completed: 0}).then(response => {
+        console.log("updating: "+ props.itemid);
+        axios.post(url, {id: props.itemid, completed: 0}).then(response => {
             // setData(response.data);
             // console.log("Data: ");
             // console.log(data);
@@ -38,15 +41,22 @@ export default function Checkbox(props) {
         });
     }
 
+    useEffect(() => {
+        axios.get(url+`?id=`+props.itemid).then(response => {
+            console.log(response);
+            setComplete(response.data[0].completed);
+        });
+    }, [props.itemid]);
+
     if(!loaded) {
         return (
             <IoIosSquare/>
         )
     } else {
         if (complete === "1" || complete === true) {
-            return (<IoIosCheckbox onClick={markIncomplete} className={"checkbox"}/>)
+            return (<IoIosCheckbox onClick={markIncomplete} className={"checkbox "+ props.itemid}/>)
         } else {
-            return (<IoIosSquareOutline onClick={markComplete} className={"checkbox"}/>)
+            return (<IoIosSquareOutline onClick={markComplete} className={"checkbox "+ props.itemid}/>)
         }
     }
 }

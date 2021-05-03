@@ -1,11 +1,12 @@
 // Projects dropdown
 import React, {useState} from "react";
 import axios from "axios";
+import PhpUrl from "./phpurl";
 
 export default function Projects(props){
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(false);
-    const url = 'http://localhost/N413/dayplanner/src/php/projects.php';
+    const url = PhpUrl() + 'php/projects.php';
     const selected = props.selected;
     const uid = props.uid;
 
@@ -25,6 +26,7 @@ export default function Projects(props){
     } else {
         return (
             <select name="project" id="project" value={selected} onChange={e => props.newProject(e.target.value)}>
+                <option value={null} value> </option>
                 {data.map((item, key) => {
                     return (
                         <option key={key} value={item.id}>{item.title}</option>

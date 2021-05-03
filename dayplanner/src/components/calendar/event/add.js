@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import { Link, useParams, useHistory} from "react-router-dom";
 import { IoIosClose, IoMdCheckmark } from "react-icons/io";
 import Projects from "../../elements/projects";
+import PhpUrl from "../../elements/phpurl";
 
 function toISO(dateObj) {
     //convert date to ISO for Date input
@@ -18,25 +19,38 @@ function toISO(dateObj) {
 export default function Add(props) {
     const [data, setData] = useState();
     const [loaded, setLoaded] = useState(true);
-    const url = 'http://localhost/N413/dayplanner/src/php/calendar.php';
+    const [uid, setUid] = useState((localStorage.getItem("token")).substring(1,(localStorage.getItem("token").length-1)));
+    const url = PhpUrl() + 'php/calendar.php';
     let {id} = useParams();
     const history= useHistory();
     // state management for form fields
-    const [title, setTitle] = useState();
-    const [description, setDescription] = useState();
-    const [start, setStart] = useState();
-    const [end, setEnd] = useState();
-    const [project, setProject] = useState();
-    const [tags, setTags] = useState();
-    const [priority, setPriority] = useState();
+    const [title, setTitle] = useState("");
+    const [description, setDescription] = useState("");
+    const [start, setStart] = useState(null);
+    const [end, setEnd] = useState(null);
+    const [project, setProject] = useState(null);
+    const [tags, setTags] = useState("");
+    const [priority, setPriority] = useState(null);
 
 
     function handleSubmit() {
         console.log('Submission: ' + title);
-        console.log(props);
+        // console.log(props);
+        if (title == "" ) {
+            alert("Title cannot be empty");
+            return false;
+        }
+        if (start == null ) {
+            alert("Start date cannot be empty");
+            return false;
+        }
+        if (end == null ) {
+            alert("End date cannot be empty");
+            return false;
+        }
         setLoaded(false);
         axios.post(url, {
-            id: id,
+            uid: uid,
             title: title,
             description: description,
             startDateTime: start,
@@ -45,20 +59,26 @@ export default function Add(props) {
             tags: tags,
             priority: priority
         }).then(response => {
-            // console.log("Response: ");
-            // console.log(response);
+            console.log("Response: ");
+            console.log(response);
             setData(response.data);
-            // console.log("Data: ");
-            // console.log(data);
+            console.log("Data: ");
+            console.log(data);
             // set parent's loaded to false to trigger axios get again
             // to refresh parent component after edit/add inside modal
-            // props.loadControl(false);
-            history.push(`/event/details/` + id);
+            props.loadControl(false);
+            props.closeModal();
         });
 
 
     }
 
+    useEffect(() => {
+        let isMounted = true; // note this flag denote mount status
+
+        return () => { isMounted = false; }; // use effect cleanup to set flag false, if unmounted
+        // setTuesday(new Date.setDate(monday.getDate() + 1));
+    }, [loaded]);
 
     if (!loaded) {
         return (
@@ -69,7 +89,7 @@ export default function Add(props) {
             <div className="edit-event-container">
                 <div className={"edit-bar"}>
                     <div className={"action"}>
-                        <Link to={`/`}><IoIosClose className={"icon"} /> Cancel</Link>
+                        <div className={"close-button"} onClick={props.closeModal}><IoIosClose className={"icon"} /> Cancel</div>
                     </div>
                     <div className={"action"}>
                         <div id="submit-form" onClick={handleSubmit} ><IoMdCheckmark className={"icon"} /> Save</div>
